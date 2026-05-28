@@ -3,9 +3,10 @@ node {
         git branch: 'main', url: 'https://github.com/rino21/jenkins-helloworld.git'
     }
     stage('Build') {
-        sh 'javac Main.java'
+        // sh 'javac Main.java'
+        sh "cat Main.java"
     }
-    stage('Run') {
-        sh 'java Main'
-    }
+    // stage('Run') {
+    //     sh 'java Main'
+    // }
 }
